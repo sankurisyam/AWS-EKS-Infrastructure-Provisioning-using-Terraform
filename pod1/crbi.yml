@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: crb-name
+subjects:
+  - kind: ServiceAccount
+    name: app-ser-acc
+    namespace: dev
+    apiGroup: ""
+roleRef:
+  kind: ClusterRole
+  apiGroup: rbac.authorization.k8s.io
+  name: clusterrole-name

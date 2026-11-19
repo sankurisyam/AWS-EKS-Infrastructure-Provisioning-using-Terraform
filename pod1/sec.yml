@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mysecret
+  namespace: dev
+type: Opaque
+stringData:
+  data_user: "myuser"
+  data_pass: "change-me"
+  jwt_secret: "myjwtsecret"
